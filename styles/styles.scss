@@ -1,0 +1,184 @@
+@import "partials/setup";
+@import "partials/typography";
+@import "partials/utils";
+
+
+/* ===================
+BASE STYLES
+=================== */
+
+
+
+// header of the page
+
+.header {
+background-image: url(../assets/image-1.jpeg);
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
+
+.header__navigation {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.header__navigation .heading3,
+.nav {
+  flex-basis: 50%
+}
+
+.nav .list {
+  justify-content: space-between;
+}
+
+.bottom__header {
+  justify-content: flex-end;
+  &__main {
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    &__heading {
+      letter-spacing: 1px;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.button {
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+  letter-spacing: 2.2px;
+  font-size: 1.2rem;
+  display: inline-block;
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 60px;
+}
+
+
+// main portion of the page
+
+  // welcome section
+
+.welcome {
+  text-align: center;
+  &__paragraph {
+  padding: 10px 160px;
+  margin: 20px 0;
+  }
+}
+
+.heading2--blue {
+  color: $hightlighttext;
+}
+
+
+  // services section
+
+.services {
+  text-align: center;
+  padding: 10px;
+}
+
+.list__item--large {
+  flex-basis: calc(33.33% - 80px);
+  margin: 40px;
+}
+
+.icon--large {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.paragraph--small {
+  font-size: 1.1rem;
+}
+
+  // testimonials section
+
+
+.image--big {
+  flex-basis: 40%;
+}
+
+.testimonials__client {
+  margin-top: 40px;
+}
+
+.testimonials__info {
+  flex-direction: column;
+  flex-basis: calc(50% - 50px);
+  margin: 0 25px;
+  justify-content: center;
+}
+
+  // gallery section
+
+.gallery-section {
+  margin-top: 60px;
+}
+
+.overlay {
+  display: none;
+}
+
+.gallery__item {
+  flex-basis: 25%;
+}
+
+.image--row {
+  height: 100%;
+}
+
+  // client profiles
+
+
+.paragraph--italic {
+  font-style: italic;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.clients__images {
+  margin: 30px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon--grey  {
+  margin: 0 25px;
+  color: lightgrey;
+
+}
+
+.clients__paragraph {
+  padding: 10px 150px;
+}
+
+// travel news section 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
