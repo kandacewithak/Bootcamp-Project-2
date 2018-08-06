@@ -1,0 +1,177 @@
+ 
+ // welcome section
+
+ .welcome {
+  text-align: center;
+  &__paragraph {
+  padding: 10px 160px;
+  margin: 20px 0;
+  }
+}
+
+.heading2--blue {
+  color: $hightlighttext;
+}
+
+
+  // services section
+
+.services {
+  text-align: center;
+  padding: 10px;
+}
+
+.list__item--large {
+  flex-basis: calc(33.33% - 80px);
+  margin: 40px;
+}
+
+.icon--large {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.paragraph--small {
+  font-size: 1.1rem;
+}
+
+  // testimonials section
+
+
+.image--big {
+  flex-basis: 40%;
+}
+
+.testimonials__client {
+  margin-top: 40px;
+}
+
+.testimonials__info {
+  flex-direction: column;
+  flex-basis: calc(50% - 50px);
+  margin: 0 25px;
+  justify-content: center;
+}
+
+  // gallery section
+
+.gallery-section {
+  margin-top: 60px;
+}
+
+.overlay {
+  display: none;
+}
+
+.gallery__item {
+  flex-basis: 25%;
+}
+
+.image--row {
+  height: 100%;
+}
+
+  // client profiles
+
+.clients {
+  text-align: center;
+}
+
+.paragraph--italic {
+  font-style: italic;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.clients__images {
+  margin: 30px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon--grey  {
+  margin: 0 25px;
+  color: lightgrey;
+
+}
+
+.clients__paragraph {
+  padding: 10px 150px;
+}
+
+// travel news section 
+
+.news__post {
+  flex-basis: calc(33% - 20px);
+  margin: 60px 10px;
+}
+
+.heading3--small {
+  font-size: 1.4rem;
+}
+
+.link--blue {
+  color: $hightlighttext;
+}
+
+.link--blue .icon {
+  margin-left: 10px;
+}
+
+
+ // question form
+
+.question__form {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.question__form__message {
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #f2b094;
+  padding: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 40px 0;
+  text-transform: uppercase;
+}
+
+.button--pink {
+  background-color: #f2b094;
+  padding: 8px;
+  align-self: center;
+}
+
+
+  // photo categories
+
+.categories__wrapper {
+  padding: 50px 10px;
+  justify-content: space-between;
+}
+
+.categories__list {
+  flex-basis: 33%;
+  background-color: dimgrey;
+  margin: 10px 0;
+  color: white;
+}
+
+.categories__gallery {
+  flex-wrap: wrap;
+  flex-basis: 65%;
+}
+
+.image--medium {
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+}
+
+.list__item--medium {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
+}

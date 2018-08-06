@@ -14,7 +14,7 @@
 
 <body>
 
-  <header class="header">
+<header class="header"> 
 
 <!-- 
 HEADER 
@@ -180,51 +180,54 @@ PAGE
         <div class="posts flex-container">
           <div class="news__post">
             <img class="image image--travel" src="assets/image-8.jpeg" alt="an Italian city on the coast">
-            <h3 class="heading3">My Trip to Italy</h3>
-            <a class="link" href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+            <h3 class="heading3 heading3--small">My Trip to Italy</h3>
+            <a class="link link--blue" href="#">Read More<i class="fas fa-angle-double-right icon"></i></a>
           </div>
           <div class="news__post">
             <img class="image image--travel" src="assets/image-9.jpeg" alt="a porch with two chairs in Greece">
-            <h3 class="heading3">Greece Photoshoot</h3>
-            <a class="link" href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+            <h3 class="heading3 heading3--small">Greece Photoshoot</h3>
+            <a class="link link--blue" href="#">Read More<i class="fas fa-angle-double-right icon"></i></a>
           </div>
           <div class="news__post">
             <img class="image image--travel" src="assets/image-10.jpeg" alt="brightly coloured houses and a staircase">
-            <h3 class="heading3">Travelling With Your Partner</h3>
-            <a class="link" href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+            <h3 class="heading3 heading3--small">Travelling With Your Partner</h3>
+            <a class="link link--blue" href="#">Read More<i class="fas fa-angle-double-right icon"></i></a>
           </div>
         </div>
       </div>
     </section>
+
+  <!-- question form section -->
 
     <section class="question">
       <div class="wrapper">
         <h2 class="heading2">Ask a Question</h2>
-        <form class="form">
-          <label for="message">Your Message:</label>
-          <textarea name="message" class="message__text" id="message">Your Message</textarea> 
-          <input type="submit">
+        <form class="form question__form flex-container">
+          <label class="question__form__label" for="message">Your Message:</label>
+          <textarea name="message" class="question__form__message" id="message">Your Message</textarea> 
+          <input class="button button--pink" type="submit" value="send">
         </form>
       </div>
     </section>
 
-  <!-- ask a question section with a form -->
+  <!-- photo categories section -->
 
     <section class="categories">
-      <div class="wrapper">
+      <div class="wrapper categories__wrapper flex-container">
         <div class="categories__list">
           <ul class="list categories__list">
-            <li class="list__item">All</li>
-            <li class="list__item">Weddings</li>
-            <li class="list__item">Scenery</li>
-            <li class="list__item">Portraits</li>
+            <li class="list__item list__item--medium">Latest Shoots</li>
+            <li class="list__item list__item--medium">All</li>
+            <li class="list__item list__item--medium">Weddings</li>
+            <li class="list__item list__item--medium">Scenery</li>
+            <li class="list__item list__item--medium">Portraits</li>
           </ul>
         </div>
-        <div class="categories__gallery">
+        <div class="categories__gallery flex-container">
           <img class="image image--medium" src="assets/image-11.jpeg" alt="a bird's eye view of a water fall">
-          <img class="image image-medium" src="assets/image-12.jpeg" alt="a group of buildings on a cliff surrounding a bay of water">
-          <img class="image image-medium" src="assets/image-13.jpeg" alt="a beach with crystal blue water, a lot of people and two boats">
-          <img class="image image-medium" src="assets/image-14.jpeg" alt="a rocky cliff near the ocean">
+          <img class="image image--medium" src="assets/image-12.jpeg" alt="a group of buildings on a cliff surrounding a bay of water">
+          <img class="image image--medium" src="assets/image-13.jpeg" alt="a beach with crystal blue water, a lot of people and two boats">
+          <img class="image image--medium" src="assets/image-14.jpeg" alt="a rocky cliff near the ocean">
         </div>
       </div>
     </section>
@@ -250,65 +253,73 @@ PAGE
 
   <!-- top portion of the footer -->
 
-    <section class="footer__top">
+    <section class="footer__top flex-container">
 
-      <!-- main portion of the top footer -->
+      <div class="wrapper">
 
-      <div class="footer__top main flex-container">
+        <!-- main portion of the top footer -->
 
-        <!-- top of the main header -->
+        <div class="footer__top__main">
 
-        <div class="top-bar">
-          <div class="top-bar__contact">
-            <h2 class="heading3">Contact</h2>
-            <p class="paragraph"><i class="far fa-envelope" aria-hidden="true"></i>infor@delicate.com</p>
-            <p class="paragraph"><i class="fas fa-phone" aria-hidden="true"></i>123 456-7890</p>
-            <p class="paragraph"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Toronto, Ontario</p>
-            <form class="form">
-                <label for="email">Your Email:</label>
-                <input type="email" name="email" id="email" class="email"><button><i class="fas fa-paper-plane"></i></button>
-            </form>
+          <!-- top of the main header -->
+
+          <div class="top-bar flex-container">
+
+            <div class="top-bar__contact">
+              <h2 class="heading3">Contact</h2>
+              <p class="paragraph"><i class="far fa-envelope" aria-hidden="true"></i>info@delicate.com</p>
+              <p class="paragraph"><i class="fas fa-phone" aria-hidden="true"></i>123 456-7890</p>
+              <p class="paragraph"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Toronto, Ontario</p>
+              <form class="form">
+                  <label for="email">Your Email:</label>
+                  <input type="email" placeholder="your email" name="email" id="email" class="input__email"><button class="button__email"><i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+
+            <div class="about-us">
+              <h2 class="heading3">About Us</h2>
+              <p class="paragraph">We are a creative and modern web studio. We are knowledgeable about all of the newest technologies. We keep up-to-date with the industry so your website will contain all of the best and modern trends.  We have been building websites since 2005.  We believe that our experience is our best asset.</p>
+            </div>
+
+            <div class="instagram">
+              <h2 class="heading3">
+                <ul class="list instagram__gallery">
+                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-15.jpeg" alt="a random image from the site owner's Instagram page"></li>
+                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-16.jpeg" alt="a random image from the site owner's Instagram page"></li>
+                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-17.jpeg" alt="a random image from the site owner's Instagram page"></li>
+                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-18.jpeg" alt="a random image from the site owner's Instagram page"></li>
+                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-19.jpeg" alt="a random image from the site owner's Instagram page"></li>
+                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-20.jpeg" alt="a random image from the site owner's Instagram page"></li>
+                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-21.jpeg" alt="a random image from the site owner's Instagram page"></li>
+                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-22.jpeg" alt="a random image from the site owner's Instagram page"></li>
+                </ul>
+              </h2>
+            </div>
+
           </div>
 
-          <div class="about-us">
-            <h2 class="heading3">About Us</h2>
-            <p class="paragraph">We are a creative and modern web studio. We are knowledgeable about all of the newest technologies. We keep up-to-date with the industry so your website will contain all of the best and modern trends.  We have been building websites since 2005.  We believe that our experience is our best asset.</p>
+        <!-- bottom of the top main header -->
+
+          <div class="footer__top__main__bottom">
+            <h2 class="heading2">Photography</h2>
+            <nav class="nav">
+              <ul class="list footer__list flex-container">
+                <li class="list__item"><a class="link">Home</a></li>
+                <li class="list__item"><a class="link">Demos</a></li>
+                <li class="list__item"><a class="link">Blog</a></li>
+                <li class="list__item"><a class="link">Pages</a></li>
+                <li class="list__item"><a class="link">About Us</a></li>
+              </ul>
+            </nav>
           </div>
 
-          <div class="instagram">
-            <h2 class="heading3">
-              <img class="image image--social" src="assets/image-15.jpeg" alt="a random image from the site owner's Instagram page">
-              <img class="image image--social" src="assets/image-16.jpeg" alt="a random image from the site owner's Instagram page">
-              <img class="image image--social" src="assets/image-17.jpeg" alt="a random image from the site owner's Instagram page">
-              <img class="image image--social" src="assets/image-18.jpeg" alt="a random image from the site owner's Instagram page">
-              <img class="image image--social" src="assets/image-19.jpeg" alt="a random image from the site owner's Instagram page">
-              <img class="image image--social" src="assets/image-20.jpeg" alt="a random image from the site owner's Instagram page">
-              <img class="image image--social" src="assets/image-21.jpeg" alt="a random image from the site owner's Instagram page">
-              <img class="image image--social" src="assets/image-22.jpeg" alt="a random image from the site owner's Instagram page">
-            </h2>
-          </div>
-        </div>
-
-      <!-- bottom of the top main header -->
-
-        <div class="footer__top bottom">
-          <h2 class="heading2">Photography</h2>
-          <nav class="nav">
-            <ul class="list footer__list">
-              <li class="list__item"><a class="link">Home</a></li>
-              <li class="list__item"><a class="link">Demos</a></li>
-              <li class="list__item"><a class="link">Blog</a></li>
-              <li class="list__item"><a class="link">Pages</a></li>
-              <li class="list__item"><a class="link">About Us</a></li>
-            </ul>
-          </nav>
         </div>
 
       </div>
 
       <!-- aside portion of the top header -->
 
-      <div class="footer__top aside">
+      <div class="footer__top__aside flex-container">
         <a class="link" href="www.facebook.com"><i class="fab fa-facebook" aria-hidden="true"></i></a>
         <a class="link" href="www.instagram.com"><i class="fab fa-instagram" aria-hidden="true"></i></a>
         <a class="link" href="www.pinterest.com"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
@@ -319,7 +330,7 @@ PAGE
   <!-- bottom portion of the footer -->
 
     <section class="footer__bottom">
-      <p>2017 All Rights Reserved &copy;</p>
+      <p class="footer__bottom__paragraph">2017 All Rights Reserved &copy;</p>
     </section>
 
   </footer>

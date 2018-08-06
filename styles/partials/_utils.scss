@@ -11,8 +11,8 @@ html {
 
 .wrapper {
   width: 60%;
+  max-width: 1290px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .heading1, .heading2, .heading3, .heading4, .link, .button {
@@ -79,7 +79,7 @@ html {
   background-color: #efefef;
 }
 
-.news {
+.news, .categories {
   background-color: #f5f3f3;
 }
 
@@ -89,4 +89,8 @@ html {
 
 .footer__bottom {
   background-color: #2a2a2a;
+}
+
+label {
+  display: none;
 }
