@@ -1,3 +1,4 @@
+// BASE HEADER STYLES
 
 
 // header background
@@ -92,9 +93,9 @@ MEDIA QUERIES
     height: 70vh;
     background-image: linear-gradient(to right, rgba(255,255,255,0.2),
     rgba(255,255,255,0.8)), url(../assets/image-1.jpeg);
-    }
+  }
 
-// header navigation
+  // header navigation
 
   .header__navigation .heading3 {
     flex-basis: 15%;
@@ -112,7 +113,7 @@ MEDIA QUERIES
     margin: 0px 8px;
   }
 
-// bottom of the header
+  // bottom of the header
 
   .bottom__header__main {
       height: 70vh;
@@ -120,16 +121,17 @@ MEDIA QUERIES
 
 }
 
+
 @media (max-width: 950px) {
 
-// header baxckground
+// header background
 
   .header {
     background-image: linear-gradient(to right, rgba(255,255,255,0.4),
     rgba(255,255,255,0.8)), url(../assets/image-1.jpeg);
   }
 
-// header navigation
+  // header navigation
 
   .header__navigation {
     flex-direction: column;
@@ -155,56 +157,68 @@ MEDIA QUERIES
     justify-content: space-around;
   }
 
- // hamburger navigation menu 
+  // hamburger navigation menu 
 
   .hamburger,
-	.exit-responsive {
+  .exit-responsive {
     display: block;
-		font-size: 2rem;
+    font-size: 2rem;
   }
 
-	.header__nav {
-		display: none;
-		position: absolute;
-		top: 5%;
-		left: 70%;
-		right: 0;
-		bottom: 0;
-		color: black;
-		height: 30vh;
-		width: 100%;
-		margin: 0;
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    right: 0;
+    bottom: 0;
+    color: black;
+    height: 30vh;
+    width: 80%;
+    margin: 0;
+    padding: 0;
   }
-  
+
   .nav__list .link:hover {
     border-bottom: none;
     }
 
-	.nav__list {
-		display: flex;
-		flex-direction: column;
-	}
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
 
-	.nav__list .list__item {
-		margin-top: 10px;
-	}
+  .nav__list .list__item {
+    margin-top: 10px;
+  }
 
-	.nav__list .link {
-		font-size: 1.4rem;
-		color: black;
-		text-align: center;
-		width: 100%;
-		padding: 50px;
+  .nav__list .link {
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
   }
 
   // bottom of the header
-  
+
   .bottom__header {
     justify-content: center;
   }
 
-  .button:hover {
-    background-color: transparent;
+}
+
+
+@media (max-width: 400px) {
+  .header__nav {
+    left: 75%;
   }
 
+  .nav__list .list__item {
+    margin-top: 5px;
+  }
+
+  .nav__list .link {
+    padding: 10px;
+  }
 }

@@ -1,6 +1,6 @@
 
 /* ==================================
-base styles
+BASE STYLES
 ================================== */
 
 html {
@@ -8,7 +8,6 @@ html {
   font-family: $basefont;
   color: $primarytext;
 }
-
 
 .wrapper {
   max-width: 850px;
@@ -91,6 +90,13 @@ html {
   background-color: #2a2a2a;
 }
 
-label {
-  display: none;
+.visuallyhidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  width: 1px; 
+  margin: -1px; 
+  padding: 0; 
+  border: 0; 
 }

@@ -133,7 +133,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 /* ==================================
-base styles
+BASE STYLES
 ================================== */
 html {
   font-size: 62.5%;
@@ -206,8 +206,15 @@ html {
 .footer__bottom {
   background-color: #2a2a2a; }
 
-label {
-  display: none; }
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
 
 .header {
   background-image: url(../assets/image-1.jpeg);
@@ -344,8 +351,9 @@ MEDIA QUERIES
     bottom: 0;
     color: black;
     height: 30vh;
-    width: 100%;
-    margin: 0; }
+    width: 80%;
+    margin: 0;
+    padding: 0; }
   .nav__list .link:hover {
     border-bottom: none; }
   .nav__list {
@@ -363,13 +371,19 @@ MEDIA QUERIES
     color: black;
     text-align: center;
     width: 100%;
-    padding: 50px; }
+    padding: 30px; }
   .bottom__header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
-  .button:hover {
-    background-color: transparent; } }
+    justify-content: center; } }
+
+@media (max-width: 400px) {
+  .header__nav {
+    left: 75%; }
+  .nav__list .list__item {
+    margin-top: 5px; }
+  .nav__list .link {
+    padding: 10px; } }
 
 .welcome {
   text-align: center; }
@@ -779,6 +793,9 @@ MEDIA QUERIES
   text-align: center;
   text-transform: uppercase; }
 
+/* =======================
+MEDIA QUERIES
+========================*/
 @media (max-width: 1150px) {
   .input__email {
     width: 100px; }
