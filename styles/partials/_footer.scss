@@ -160,9 +160,25 @@ margin-top: 75px;
   }
 
   .footer__list .link {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
+  .footer__list .list__item {
+    margin-top: 10px;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .instagram {
+    display: none;
+  }
 
 }
 
