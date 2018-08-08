@@ -1,7 +1,7 @@
  
- // welcome section
+// welcome section
 
- .welcome {
+.welcome {
   text-align: center;
   &__paragraph {
   padding: 10px 160px;
@@ -24,7 +24,7 @@
 }
 
 
-  // services section
+// services section
 
 .services {
   text-align: center;
@@ -45,8 +45,17 @@
   font-size: 1.1rem;
 }
 
-  // testimonials section
+.heading3--hover {
+  transition: 1s;
+}
 
+.heading3--hover:hover {
+  transform: scale(1.2);
+}
+
+
+
+// testimonials section
 
 .image--big {
   flex-basis: 40%;
@@ -63,25 +72,45 @@
   justify-content: center;
 }
 
-  // gallery section
+
+// gallery section
 
 .gallery-section {
   margin-top: 60px;
 }
 
-.overlay {
-  display: none;
-}
-
 .gallery__item {
   flex-basis: 25%;
+  position: relative;
 }
 
 .image--row {
   height: 100%;
 }
 
-  // client profiles
+.overlay {
+  display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.7);
+  text-align: center;
+  color: white;
+	padding: 50px;
+}
+
+.paragraph--white {
+  color: white;
+}
+
+.gallery__item:hover .overlay {
+	display: block;
+}
+
+
+// client profiles
 
 .clients {
   text-align: center;
@@ -102,7 +131,10 @@
 .icon--grey  {
   margin: 0 25px;
   color: lightgrey;
+}
 
+.icon--grey:hover {
+  color: darkgrey;
 }
 
 .clients__paragraph {
@@ -129,8 +161,16 @@
   margin-left: 10px;
 }
 
+.image--travel {
+  transition: 0.5s;
+}
 
- // question form
+.image--travel:hover {
+  transform: scale(1.1);
+}
+
+
+// question form
 
 .question__form {
   flex-direction: column;
@@ -142,21 +182,30 @@
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   background-color: #f2b094;
-  padding: 5px;
   font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 10px;
   text-align: center;
   margin: 40px 0;
   text-transform: uppercase;
+  resize: none;
 }
 
 .button--pink {
   background-color: #f2b094;
-  padding: 8px;
+  padding: 8px 10px;
   align-self: center;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.button--pink:hover {
+  background-color: black;
+  color: #f2b094;
 }
 
 
-  // photo categories
+// photo categories
 
 .categories__wrapper {
   padding: 50px 10px;
@@ -178,6 +227,11 @@
 .image--medium {
   flex-basis: calc(50% - 20px);
   margin: 10px;
+  transition: 0.5s;
+}
+
+.image--medium:hover {
+  transform: scale(1.1);
 }
 
 .list__item--medium {
@@ -185,6 +239,15 @@
   text-transform: uppercase;
   text-align: center;
   padding: 20px 0;
+}
+
+.list__item--medium:hover {
+  background-color: black;
+}
+
+.list__item--medium .link {
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -204,9 +267,134 @@ MEDIA QUERIES
     font-size: 1rem;
   }
 
+  .overlay {
+    padding: 20px;
+  }
+
   .link--blue {
     font-size: 1rem;
   }
 
+}
+
+
+@media (max-width: 850px) {
+
+  .paragraph--big {
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .gallery__heading3 {
+    font-size: 1.5rem;
+  }
+
+  .overlay {
+    padding: 5px;
+  }
+
+  .categories__wrapper {
+    flex-direction: column;
+  }  
+  
+  .categories__list {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+  }
+
+  .list__item--medium .link {
+    font-size: 1rem;
+  }
+
+  .list__item--medium:hover {
+    background-color: dimgrey;
+  }
 
 }
+
+
+@media (max-width: 650px) {
+
+  .main__wrapper {
+    width: 95%;
+  }
+
+  .gallery__item:hover .overlay {
+    display: none;
+  }
+
+  .posts {
+    flex-direction: column;
+  }
+
+  .news__post {
+    margin: 20px 0;
+  }
+
+  .heading3--small, .link--blue {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .services .heading2 {
+    margin-bottom: 15px;
+  }
+
+  .services__list {
+    flex-direction: column;
+  }
+
+  .list__item--large {
+    margin: 10px auto;
+    width: 60%;
+  }
+
+  .testimonials__client {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image--big {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .categories__wrapper {
+    width: 95%;
+  }
+
+  .list__item--medium .link {
+    font-size: 1rem;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  .gallery-section {
+    display: none;
+  }
+
+  .categories__gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clients .heading2 {
+    font-size: 2.2rem;
+  }
+
+  .image--medium {
+    width: 80%;
+  }
+
+}
+
+
+

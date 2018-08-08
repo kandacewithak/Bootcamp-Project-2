@@ -1,4 +1,7 @@
 
+
+// header background
+
 .header {
   background-image: url(../assets/image-1.jpeg);
   background-attachment: fixed;
@@ -7,58 +10,74 @@
   height: 100vh;
   }
   
-  .header__navigation {
-    align-items: center;
-    padding-top: 20px;
-  }
-  
-  .header__navigation .heading3,
-  .header__nav {
-    flex-basis: 50%
-  }
-  
-  .nav__list {
-    justify-content: space-between;
-  }
 
-  .nav__list .link {
-    transition: 0.5s;
-  }
+// header navigation
 
-  .nav__list .link:hover {
-    border-bottom: 4px solid #f2b094;
-  }
+.header__navigation {
+align-items: center;
+padding-top: 20px;
+}
   
-  .bottom__header {
-    justify-content: flex-end;
-    &__main {
-      flex-direction: column;
-      height: 80vh;
-      justify-content: center;
-      &__heading {
-        letter-spacing: 1px;
-        font-size: 1.4rem;
-        margin-bottom: 20px;
-      }
+.header__navigation .heading3,
+.header__nav {
+flex-basis: 50%
+}
+  
+.nav__list {
+justify-content: space-between;
+}
+
+.nav__list .link {
+transition: 0.5s;
+}
+
+.nav__list .link:hover {
+border-bottom: 4px solid #f2b094;
+}
+
+// bottom of header
+  
+.bottom__header {
+  justify-content: flex-end;
+  &__main {
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    &__heading {
+      letter-spacing: 1px;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
     }
   }
+}
   
-  .button {
-    border: 1px solid black;
-    border-radius: 15px;
-    text-align: center;
-    letter-spacing: 2.2px;
-    font-size: 1.2rem;
-    display: inline-block;
-    width: 100px;
-    padding: 5px;
-    margin-bottom: 60px;
-    transition: ease-in-out 0.5s;
-  }
+.button {
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+  letter-spacing: 2.2px;
+  font-size: 1.2rem;
+  display: inline-block;
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 60px;
+  transition: 0.5s;
+}
 
-  .button:hover {
-    background-color: #f2b094;
-  }
+.button:hover {
+  background-color: #f2b094;
+}
+
+// for responsive navigation menu
+
+.hamburger,
+.exit-responsive {
+display: none;
+}
+
+.show.header__nav {
+display: block;
+}
 
 
 /* ============================
@@ -67,9 +86,15 @@ MEDIA QUERIES
 
 @media (max-width: 1150px) {
 
+// header background
+
   .header {
     height: 70vh;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.2),
+    rgba(255,255,255,0.8)), url(../assets/image-1.jpeg);
     }
+
+// header navigation
 
   .header__navigation .heading3 {
     flex-basis: 15%;
@@ -87,11 +112,99 @@ MEDIA QUERIES
     margin: 0px 8px;
   }
 
+// bottom of the header
+
   .bottom__header__main {
-      width: 70%;
-      height: 60vh;
-      align-items: flex-end;
+      height: 70vh;
   }
 
+}
+
+@media (max-width: 950px) {
+
+// header baxckground
+
+  .header {
+    background-image: linear-gradient(to right, rgba(255,255,255,0.4),
+    rgba(255,255,255,0.8)), url(../assets/image-1.jpeg);
+  }
+
+// header navigation
+
+  .header__navigation {
+    flex-direction: column;
+  }
+
+  .header__navigation .heading3 {
+    margin-bottom: 10px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+// header navigation
+
+  .wrapper__header, .header__navigation {
+    width: 100%;
+  }
+
+  .header__navigation {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+ // hamburger navigation menu 
+
+  .hamburger,
+	.exit-responsive {
+    display: block;
+		font-size: 2rem;
+  }
+
+	.header__nav {
+		display: none;
+		position: absolute;
+		top: 5%;
+		left: 70%;
+		right: 0;
+		bottom: 0;
+		color: black;
+		height: 30vh;
+		width: 100%;
+		margin: 0;
+  }
+  
+  .nav__list .link:hover {
+    border-bottom: none;
+    }
+
+	.nav__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav__list .list__item {
+		margin-top: 10px;
+	}
+
+	.nav__list .link {
+		font-size: 1.4rem;
+		color: black;
+		text-align: center;
+		width: 100%;
+		padding: 50px;
+  }
+
+  // bottom of the header
+  
+  .bottom__header {
+    justify-content: center;
+  }
+
+  .button:hover {
+    background-color: transparent;
+  }
 
 }

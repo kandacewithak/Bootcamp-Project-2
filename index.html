@@ -14,7 +14,7 @@
 
 <body>
 
-<header class="header"> 
+  <header class="header"> 
 
 <!-- 
 HEADER 
@@ -22,8 +22,7 @@ OF THE
 PAGE 
 -->
 
-
-    <div class="wrapper">
+    <div class="wrapper wrapper__header">
 
   <!-- header navigation -->
 
@@ -33,8 +32,10 @@ PAGE
 
   <!-- navigation bar -->
 
+        <p class="hamburger"><i class="fas fa-bars"></i></p>
         <nav class="header__nav">
           <ul class="list nav__list flex-container">
+            <li class="exit-responsive"><i class="fas fa-times"></i></li>
             <li class="list__item"><a class="link" href="#">Home</a></li>
             <li class="list__item"><a class="link" href="#">Gallery</a></li>
             <li class="list__item"><a class="link" href="#">Blog</a></li>
@@ -46,6 +47,7 @@ PAGE
       </div>
 
   <!-- main portion of the header -->
+
       <div class="bottom__header flex-container">
         <div class="bottom__header__main flex-container">
           <h1 class="heading1">Welcome</h1>
@@ -76,7 +78,7 @@ PAGE
   <!-- welcome section -->
 
     <section class="welcome">
-      <div class="wrapper welcome__wrapper">
+      <div class="wrapper main__wrapper">
         <h2 class="heading2">Welcome to <span class="heading2--blue">Photography</span></h2>
         <p class="welcome__paragraph paragraph paragraph--big">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate felis eu nunc moletie molestie vel tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla neque eu est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.</p>
         <a class="link button button--blue-hover" href="#">More</a>
@@ -86,24 +88,24 @@ PAGE
   <!-- a list of photography services -->
 
     <section class="services">
-      <div class="wrapper">
+      <div class="wrapper main__wrapper">
         <h2 class="heading2">Services</h2>
 
         <ul class="list services__list flex-container">
           <li class="list__item list__item--large">
             <i class="fas fa-camera icon--large" aria-hidden="true"></i>
-            <h3 class="heading3 heading3">Portraits</h3>
-            <p class="paragraph paragraph--small">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula.  Phasellus gravida ante nd metus viverra, id.</p>
+            <h3 class="heading3 heading3--hover">Portraits</h3>
+            <p class="paragraph paragraph--small">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
           </li>
           <li class="list__item list__item--large">
             <i class="fas fa-leaf icon--large" aria-hidden="true"></i>
-            <h3 class="heading3 heading3">Scenery</h3>
-            <p class="paragraph paragraph--small">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula.   Phasellus gravida ante nd metus viverra, id.</p>
+            <h3 class="heading3 heading3--hover">Scenery</h3>
+            <p class="paragraph paragraph--small">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
           </li>
           <li class="list__item list__item--large">
             <i class="fas fa-heart icon--large" aria-hidden="true"></i>
-            <h3 class="heading3 heading3">Weddings</h3>
-            <p class="paragraph paragraph--small">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula.  Phasellus gravida ante nd metus viverra, id.</p>
+            <h3 class="heading3 heading3--hover">Weddings</h3>
+            <p class="paragraph paragraph--small">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed id lobor ligula. Phasellus gravida ante nd metus viverra, id.</p>
           </li>
         </ul>
       </div>
@@ -112,7 +114,7 @@ PAGE
   <!-- client testimonials section -->
 
     <section class="testimonials">
-      <div class="wrapper">
+      <div class="wrapper main__wrapper">
         <h2 class="heading2">Testimonials</h2>
         <div class="testimonials__client flex-container">
           <img class="image image--big" src="assets/image-2.jpeg" alt="a photo of Kate Sampson who provided a testimonial for the website">
@@ -131,28 +133,28 @@ PAGE
         <img class="image image--row" src="assets/image-3.jpeg" alt="a photo of a girl shaking wet hair around">
         <div class="overlay">
           <h3 class="heading3 gallery__heading3">Sample Shoot</h3>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. psum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="paragraph paragraph--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. psum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="gallery__item">
         <img class="image image--row" src="assets/image-4.jpeg" alt="a photo of a castle on a small island in the middle of a lake">
         <div class="overlay">
           <h3 class="heading3 gallery__heading3">Sample Shoot</h3>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elitm psum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="paragraph paragraph--white">Lorem ipsum dolor sit amet, consectetur adipiscing elitm psum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="gallery__item">
         <img class="image image--row" src="assets/image-5.jpeg" alt="a photo of some long boats near a south-east Asian island">
         <div class="overlay">
           <h3 class="heading3 gallery__heading3">Sample Shoot</h3>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elitm ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="paragraph paragraph--white">Lorem ipsum dolor sit amet, consectetur adipiscing elitm ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="gallery__item">
         <img class="image image--row" src="assets/image-6.jpeg" alt="a photo of buildings on a cliff near the ocean">
         <div class="overlay">
           <h3 class="heading3 gallery__heading3">Sample Shoot</h3>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elitm ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="paragraph paragraph--white">Lorem ipsum dolor sit amet, consectetur adipiscing elitm ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
     </section>
@@ -205,7 +207,7 @@ PAGE
         <h2 class="heading2">Ask a Question</h2>
         <form class="form question__form flex-container">
           <label class="question__form__label" for="message">Your Message:</label>
-          <textarea name="message" class="question__form__message" id="message">Your Message</textarea> 
+          <textarea name="message" class="question__form__message" id="message" placeholder="Your Message"></textarea> 
           <input class="button button--pink" type="submit" value="send">
         </form>
       </div>
@@ -217,11 +219,11 @@ PAGE
       <div class="wrapper categories__wrapper flex-container">
         <div class="categories__list">
           <ul class="list categories__list">
-            <li class="list__item list__item--medium">Latest Shoots</li>
-            <li class="list__item list__item--medium">All</li>
-            <li class="list__item list__item--medium">Weddings</li>
-            <li class="list__item list__item--medium">Scenery</li>
-            <li class="list__item list__item--medium">Portraits</li>
+            <li class="list__item list__item--medium"><a href="#" class="link">Latest Shoots</a></li>
+            <li class="list__item list__item--medium"><a href="#" class="link">All</a></li>
+            <li class="list__item list__item--medium"><a href="#" class="link">Weddings</li></a>
+            <li class="list__item list__item--medium"><a href="#" class="link">Scenery</a></li>
+            <li class="list__item list__item--medium"><a href="#" class="link">Portraits</a></li>
           </ul>
         </div>
         <div class="categories__gallery flex-container">
@@ -256,7 +258,7 @@ PAGE
 
     <section class="footer__top flex-container">
 
-      <div class="wrapper">
+      <div class="wrapper wrapper__footer">
 
         <!-- main portion of the top footer -->
 
@@ -283,18 +285,33 @@ PAGE
             </div>
 
             <div class="instagram">
-              <h2 class="heading3">
-                <ul class="list instagram__gallery">
-                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-15.jpeg" alt="a random image from the site owner's Instagram page"></li>
-                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-16.jpeg" alt="a random image from the site owner's Instagram page"></li>
-                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-17.jpeg" alt="a random image from the site owner's Instagram page"></li>
-                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-18.jpeg" alt="a random image from the site owner's Instagram page"></li>
-                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-19.jpeg" alt="a random image from the site owner's Instagram page"></li>
-                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-20.jpeg" alt="a random image from the site owner's Instagram page"></li>
-                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-21.jpeg" alt="a random image from the site owner's Instagram page"></li>
-                  <li class="instagram__list-item"><img class="image image--social" src="assets/image-22.jpeg" alt="a random image from the site owner's Instagram page"></li>
-                </ul>
-              </h2>
+              <h2 class="heading3">Instagram</h2>
+              <div class="instagram__gallery flex-container">
+                <div class="instagram__gallery__item">
+                  <img class="image image--social" src="assets/image-15.jpeg" alt="a random image from the site owner's Instagram page">
+                </div>
+                <div class="instagram__gallery__item">
+                  <img class="image image--social" src="assets/image-16.jpeg" alt="a random image from the site owner's Instagram page">
+                </div>
+                <div class="instagram__gallery__item">
+                  <img class="image image--social" src="assets/image-17.jpeg" alt="a random image from the site owner's Instagram page">
+                </div>
+                <div class="instagram__gallery__item">
+                  <img class="image image--social" src="assets/image-18.jpeg" alt="a random image from the site owner's Instagram page">
+                </div>
+                <div class="instagram__gallery__item">
+                  <img class="image image--social" src="assets/image-19.jpeg" alt="a random image from the site owner's Instagram page">
+                </div>
+                <div class="instagram__gallery__item">
+                  <img class="image image--social" src="assets/image-20.jpeg" alt="a random image from the site owner's Instagram page">
+                </div>
+                <div class="instagram__gallery__item">
+                  <img class="image image--social" src="assets/image-21.jpeg" alt="a random image from the site owner's Instagram page">
+                </div>
+                <div class="instagram__gallery__item">
+                  <img class="image image--social" src="assets/image-22.jpeg" alt="a random image from the site owner's Instagram page">
+                </div>
+              </div>
             </div>
 
           </div>
@@ -305,11 +322,11 @@ PAGE
             <h2 class="heading2">Photography</h2>
             <nav class="footer__nav">
               <ul class="list footer__list flex-container">
-                <li class="list__item"><a class="link">Home</a></li>
-                <li class="list__item"><a class="link">Demos</a></li>
-                <li class="list__item"><a class="link">Blog</a></li>
-                <li class="list__item"><a class="link">Pages</a></li>
-                <li class="list__item"><a class="link">About Us</a></li>
+                <li class="list__item"><a class="link" href="#">Home</a></li>
+                <li class="list__item"><a class="link" href="#">Demos</a></li>
+                <li class="list__item"><a class="link" href="#">Blog</a></li>
+                <li class="list__item"><a class="link" href="#">Pages</a></li>
+                <li class="list__item"><a class="link" href="#">About Us</a></li>
               </ul>
             </nav>
           </div>
@@ -321,9 +338,9 @@ PAGE
       <!-- aside portion of the top header -->
 
       <div class="footer__top__aside flex-container">
-        <a class="link" href="www.facebook.com"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-        <a class="link" href="www.instagram.com"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-        <a class="link" href="www.pinterest.com"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
+        <a class="link" href="www.facebook.com"><i class="fab fa-facebook icon--grey" aria-hidden="true"></i></a>
+        <a class="link" href="www.instagram.com"><i class="fab fa-instagram icon--grey" aria-hidden="true"></i></a>
+        <a class="link" href="www.pinterest.com"><i class="fab fa-pinterest-p icon--grey" aria-hidden="true"></i></a>
       </div>
 
     </section>
@@ -343,6 +360,29 @@ FOOTER
 OF THE 
 PAGE 
 -->
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script>
+
+    // javascript to toggle the hamburger menu for mobile devices
+
+    $(function() {
+      $('.hamburger').click(function() {
+        $('.header__nav').toggleClass('show');  
+        toggleClass('show');
+      });
+
+      $('.exit-responsive').click(function() {
+        $('.header__nav').removeClass('show');
+      });
+
+    });
+    
+  </script>
   
 </body>
 
